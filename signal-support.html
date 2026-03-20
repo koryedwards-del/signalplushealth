@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Signal+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --cyan:    #00C8E8;
+      --dark:    #080C12;
+      --dark2:   #0B0F18;
+      --surface: #111822;
+      --text:    #F0EDE8;
+      --muted:   #8A97A8;
+      --border:  rgba(0,200,232,0.10);
+      --glow:    rgba(0,200,232,0.07);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      height: 56px;
+      background: rgba(8,12,18,0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-brand {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.1em;
+      color: var(--cyan);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .nav-brand sup { font-size: 11px; vertical-align: super; opacity: 0.8; }
+    .nav-back {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--text); }
+
+    /* CONTAINER */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 96px 24px 100px;
+    }
+
+    /* HEADER */
+    header { margin-bottom: 48px; }
+    .page-eyebrow {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.1;
+      color: var(--text);
+    }
+
+    /* DIVIDER */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 36px 0;
+    }
+
+    /* SECTION */
+    .section { margin-bottom: 40px; }
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 14px;
+    }
+    p {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 14px;
+      line-height: 1.85;
+    }
+    ul { list-style: none; margin-bottom: 14px; }
+    ul li {
+      font-size: 15px;
+      color: var(--muted);
+      padding: 5px 0 5px 20px;
+      position: relative;
+      line-height: 1.75;
+    }
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--cyan);
+      opacity: 0.5;
+    }
+
+    /* CARD */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 2px solid var(--cyan);
+      border-radius: 10px;
+      padding: 24px 28px;
+      margin-top: 16px;
+      box-shadow: 0 0 20px var(--glow);
+    }
+    .card p { margin-bottom: 0; }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { opacity: 0.8; }
+
+    /* FOOTER */
+    footer {
+      margin-top: 80px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-brand {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--cyan);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    .footer-brand sup { font-size: 9px; vertical-align: super; }
+    .footer-copy {
+      font-size: 12px;
+      color: #3A4A5A;
+      font-family: 'Space Mono', monospace;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 18px; }
+      .container { padding: 80px 20px 80px; }
+      footer { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-brand" href="index.html">SIGNAL<sup>+</sup></a>
+    <a class="nav-back" href="index.html">← Back to Home</a>
+  </nav>
+
+  <div class="container">
+    <header>
+      <p class="page-eyebrow">Help & Information</p>
+      <h1>Support</h1>
+    </header>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Getting Started</h2>
+      <p>Signal+ is designed to be simple. Log protein four times a day, spaced about four hours apart. The app prompts you when it's time to eat again — you just respond to it.</p>
+      <ul>
+        <li>Tap LOG PROTEIN each time you consume 30g or more of protein</li>
+        <li>The arc dial shows how much time is left in your current window</li>
+        <li>Tap any logged bottle to edit the time if needed</li>
+        <li>The Apple Watch app lets you log without opening your phone</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Notifications</h2>
+      <p>Signal+ sends three types of reminders:</p>
+      <ul>
+        <li>Morning nudge at 8 AM if you haven't logged your first protein yet</li>
+        <li>Feed Me reminders at 3.5, 4.0, and 4.5 hours after your last log</li>
+        <li>Optional hydration reminders at 10 AM, 2 PM, and 6 PM</li>
+      </ul>
+      <p>All notifications can be managed in Settings inside the app, or in your iPhone's iOS Settings.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Apple Watch</h2>
+      <p>The Signal+ Watch app shows your four bottles and a LOG PROTEIN button. Logs made on the watch sync to your iPhone automatically when both devices are nearby. If your phone isn't reachable, the log is queued and syncs when connectivity is restored.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Daily Reset</h2>
+      <p>Signal+ resets automatically at midnight each day. Your previous day's logs are saved to your journal and a new day begins fresh.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Profile Settings</h2>
+      <ul>
+        <li>Age 65+ — tailors messaging for older adults managing sarcopenia risk</li>
+        <li>GLP-1 User — tailors messaging for users of Ozempic, Wegovy, Mounjaro, or Zepbound</li>
+      </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Can't find what you need? Email us at <a href="/cdn-cgi/l/email-protection#9ff6f1f9f0dfecf6f8f1fef3eff3eaecf7fafef3ebf7b1fcf0f2"><span class="__cf_email__" data-cfemail="96fff8f0f9d6e5fff1f8f7fae6fae3e5fef3f7fae2feb8f5f9f
