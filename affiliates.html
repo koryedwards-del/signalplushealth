@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Signal+ Affiliates — Earn While You Stay Healthy</title>
+  <title>Signal+ Affiliates — Refer Three. Yours is Free.</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -47,30 +47,31 @@
       pointer-events: none;
     }
     .eyebrow { font-family: "Space Mono", monospace; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cyan); opacity: 0.75; margin-bottom: 20px; }
-    h1 { font-family: "Oswald", sans-serif; font-weight: 700; font-size: clamp(32px, 5vw, 60px); line-height: 1.05; margin-bottom: 16px; }
+    h1 { font-family: "Oswald", sans-serif; font-weight: 700; font-size: clamp(32px, 5vw, 64px); line-height: 1.05; margin-bottom: 16px; }
     h1 span { color: var(--cyan); }
-    .hero-sub { font-size: 17px; color: var(--muted); max-width: 560px; margin: 0 auto 40px; line-height: 1.8; }
+    .hero-sub { font-size: 17px; color: var(--muted); max-width: 560px; margin: 0 auto 48px; line-height: 1.8; }
 
-    .numbers {
+    .three-free {
       display: flex;
       justify-content: center;
       gap: 0;
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto 80px;
       border: 1px solid var(--border);
       border-radius: 14px;
       overflow: hidden;
       background: var(--surface);
+      box-shadow: 0 0 40px var(--glow);
     }
-    .number-item {
+    .three-free-item {
       flex: 1;
       padding: 40px 20px;
       text-align: center;
       border-right: 1px solid var(--border);
     }
-    .number-item:last-child { border-right: none; }
-    .number-value { font-family: "Oswald", sans-serif; font-weight: 700; font-size: clamp(36px, 5vw, 56px); color: var(--cyan); line-height: 1; margin-bottom: 8px; }
-    .number-label { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .three-free-item:last-child { border-right: none; }
+    .three-free-number { font-family: "Oswald", sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 64px); color: var(--cyan); line-height: 1; margin-bottom: 10px; }
+    .three-free-label { font-size: 13px; color: var(--muted); line-height: 1.6; }
 
     .how-section { max-width: 720px; margin: 0 auto; padding: 0 20px 80px; }
     .how-section h2 { font-family: "Oswald", sans-serif; font-weight: 700; font-size: clamp(24px, 4vw, 36px); margin-bottom: 32px; text-align: center; }
@@ -97,18 +98,13 @@
       border-bottom: 1px solid var(--border);
     }
     .waitlist h2 { font-family: "Oswald", sans-serif; font-weight: 700; font-size: clamp(24px, 4vw, 36px); margin-bottom: 12px; }
-    .waitlist p { color: var(--muted); font-size: 15px; margin-bottom: 32px; }
+    .waitlist p { color: var(--muted); font-size: 15px; margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
     .waitlist-form { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
     .waitlist-form input {
-      padding: 14px 20px;
-      border-radius: 50px;
-      border: 1px solid var(--border);
-      background: var(--surface);
-      color: var(--text);
-      font-size: 15px;
-      width: 280px;
-      outline: none;
-      font-family: "Open Sans", sans-serif;
+      padding: 14px 20px; border-radius: 50px;
+      border: 1px solid var(--border); background: var(--surface);
+      color: var(--text); font-size: 15px; width: 280px;
+      outline: none; font-family: "Open Sans", sans-serif;
     }
     .waitlist-form input:focus { border-color: var(--cyan); }
     .btn { display: inline-block; border: 1px solid var(--cyan); color: var(--cyan); background: transparent; font-family: "Oswald", sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; padding: 14px 36px; border-radius: 50px; cursor: pointer; transition: background 0.22s, color 0.22s; }
@@ -128,9 +124,9 @@
     @media (max-width: 680px) {
       nav { padding: 0 18px; }
       .nav-links { display: none; }
-      .numbers { flex-direction: column; }
-      .number-item { border-right: none; border-bottom: 1px solid var(--border); }
-      .number-item:last-child { border-bottom: none; }
+      .three-free { flex-direction: column; }
+      .three-free-item { border-right: none; border-bottom: 1px solid var(--border); }
+      .three-free-item:last-child { border-bottom: none; }
       footer { flex-direction: column; align-items: center; text-align: center; padding: 28px 20px; }
       .footer-links { justify-content: center; }
     }
@@ -150,21 +146,21 @@
 
   <section class="hero">
     <p class="eyebrow">Signal+ Affiliate Program</p>
-    <h1>Refer three. <span>Yours is free.</span></h1>
-    <p class="hero-sub">Share Signal+ and earn 33.3% on every subscription you refer. Three referrals covers your own subscription. Every referral after that is income.</p>
+    <h1>Refer three.<br><span>Yours is free.</span></h1>
+    <p class="hero-sub">Share Signal+ and earn a 33.3% commission on every subscription you refer. Three referrals and your own subscription is completely covered. Every referral after that is income in your pocket.</p>
 
-    <div class="numbers">
-      <div class="number-item">
-        <div class="number-value">33.3%</div>
-        <div class="number-label">Commission on every referral</div>
+    <div class="three-free">
+      <div class="three-free-item">
+        <div class="three-free-number">33.3%</div>
+        <div class="three-free-label">Commission on every referral</div>
       </div>
-      <div class="number-item">
-        <div class="number-value">$13.33</div>
-        <div class="number-label">Earned per referral</div>
+      <div class="three-free-item">
+        <div class="three-free-number">3</div>
+        <div class="three-free-label">Referrals to cover your subscription</div>
       </div>
-      <div class="number-item">
-        <div class="number-value">3</div>
-        <div class="number-label">Referrals to cover your subscription</div>
+      <div class="three-free-item">
+        <div class="three-free-number">∞</div>
+        <div class="three-free-label">No cap on what you can earn</div>
       </div>
     </div>
   </section>
@@ -176,28 +172,28 @@
         <span class="step-num">01</span>
         <div class="step-text">
           <h4>Join the program</h4>
-          <p>Sign up for the affiliate program. You'll get a unique referral link tied to your account.</p>
+          <p>Sign up and get your unique referral link. It takes 60 seconds.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">02</span>
         <div class="step-text">
-          <h4>Share your link</h4>
-          <p>Share it with friends, family, your doctor, your trainer — anyone who could benefit from Signal+.</p>
+          <h4>Share it</h4>
+          <p>Send your link to friends, family, your doctor, your trainer — anyone who could benefit from protecting their muscle.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">03</span>
         <div class="step-text">
           <h4>Earn 33.3% per referral</h4>
-          <p>Every time someone subscribes through your link, you earn $13.33. Three referrals and your own subscription is covered.</p>
+          <p>Every time someone subscribes through your link you earn a commission. Three referrals and your own subscription is covered at any price point.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">04</span>
         <div class="step-text">
           <h4>Keep earning</h4>
-          <p>There is no cap. Every referral beyond three is pure income deposited directly to you.</p>
+          <p>There is no cap. Every referral beyond three is pure income paid directly to you.</p>
         </div>
       </div>
     </div>
