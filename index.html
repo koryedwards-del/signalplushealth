@@ -224,7 +224,7 @@
     .science { padding: 28px 20px 36px; background: var(--dark); }
     .science-inner { max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
     .science-body { font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 16px; }
-    .science-badges { display: flex; gap: 10px; margin-top: 20px; }
+    .science-badges { display: flex; gap: 10px; margin-top: 20px; justify-content: center; }
     .science-badge {
       display: inline-block;
       border: 1px solid rgba(0,200,232,0.3);
@@ -236,7 +236,7 @@
       padding: 5px 14px;
       border-radius: 20px;
     }
-    .pubmed-note { margin-top: 14px; font-size: 12px; color: #4A5A6A; line-height: 1.6; max-width: 380px; font-style: italic; }
+    .pubmed-note { margin-top: 14px; font-size: 12px; color: #4A5A6A; line-height: 1.6; max-width: 380px; font-style: italic; text-align: center; margin-left: auto; margin-right: auto; }
     .citation-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .citation-card {
       background: var(--surface);
@@ -404,7 +404,6 @@
     <div class="for-inner">
       <div class="for-text">
         <p class="section-eyebrow">Who It's For</p>
-        <h2 class="section-title">You're not imagining it.</h2>
       </div>
       <div class="for-grid">
         <div class="for-card reveal">
@@ -415,6 +414,10 @@
           <h4>Older Adults</h4>
           <p>You're drinking your shake every day. You're doing what you were told. But you're still getting weaker. Still less energy. And somewhere in the back of your mind is a fear you don't talk about — losing your independence. Signal+ was built for that fear.</p>
         </div>
+        <div class="for-card reveal">
+          <h4>Fitness Beginners</h4>
+          <p>You're showing up every day. Doing the work. But the body isn't changing the way you expected. You're not doing anything wrong — you're just missing one thing nobody told you about.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -424,7 +427,6 @@
     <div class="science-inner">
       <div>
         <p class="section-eyebrow">The Science</p>
-        <h2 class="section-title reveal">This is why.</h2>
         <p class="science-body reveal">Signal+ isn't based on habit tracking or gut feeling. It's built on peer-reviewed research into how muscle is actually made and lost. Here's what that research says.</p>
         <div class="science-badges reveal">
           <span class="science-badge">Peer Reviewed</span>
