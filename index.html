@@ -3,11 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Signal+ — Protein Timing Reminder for Muscle Protection</title>
+  <title>Signal+ | Ozempic &amp; Mounjaro | Still Tired. Still Soft.</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Puzzled why that soft spot won't budge? Signal+ reminds you to protect your strength while losing weight. Built by a GLP-1 user. Backed by science.">
+  <meta name="keywords" content="GLP-1 muscle loss, Ozempic muscle loss, Mounjaro muscle loss, Ozempic fatigue, Mounjaro fatigue, lost weight still soft, GLP-1 tired, protein timing app, mTOR activation, sarcopenia prevention">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Signal+ | Ozempic &amp; Mounjaro | Still Tired. Still Soft.">
+  <meta property="og:description" content="Puzzled why that soft spot won't budge? Meet mTOR — your new best friend. Built by a GLP-1 user. Backed by science.">
+  <meta property="og:image" content="https://www.signalplushealth.com/Images/cyansignal+logotransparent.png">
+  <meta property="og:url" content="https://www.signalplushealth.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Signal+ | Ozempic &amp; Mounjaro | Still Tired. Still Soft.">
+  <meta name="twitter:description" content="Protect your strength while losing weight. Built by a GLP-1 user. Backed by science.">
+  <meta name="twitter:image" content="https://www.signalplushealth.com/Images/cyansignal+logotransparent.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.signalplushealth.com">
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -53,12 +75,7 @@
       text-decoration: none;
       text-transform: uppercase;
     }
-    .nav-brand sup {
-      font-size: 11px;
-      letter-spacing: 0.05em;
-      vertical-align: super;
-      opacity: 0.8;
-    }
+    .nav-brand sup { font-size: 11px; letter-spacing: 0.05em; vertical-align: super; opacity: 0.8; }
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a {
       color: #6A7A8A;
@@ -78,11 +95,7 @@
       border: none;
       padding: 4px;
     }
-    .nav-toggle span {
-      display: block; width: 24px; height: 2px;
-      background: #6A7A8A; border-radius: 2px;
-      transition: background 0.2s;
-    }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: #6A7A8A; border-radius: 2px; transition: background 0.2s; }
     .nav-toggle:hover span { background: #fff; }
 
     /* ── HERO ── */
@@ -113,16 +126,14 @@
       color: var(--cyan);
       opacity: 0.75;
       margin-bottom: 40px;
-      position: relative;
-      z-index: 1;
+      position: relative; z-index: 1;
     }
     .hero h1 {
       font-family: 'Oswald', sans-serif;
       font-weight: 700;
       font-size: clamp(30px, 5.5vw, 60px);
       line-height: 1.05;
-      position: relative;
-      z-index: 1;
+      position: relative; z-index: 1;
     }
     .hero h1 .line1 { color: var(--text); display: block; }
     .hero h1 .line2 { color: var(--cyan); display: block; }
@@ -134,39 +145,19 @@
       line-height: 1.8;
       position: relative; z-index: 1;
     }
-    .hero-cta {
+    .hero-need {
       margin-top: 24px;
-      position: relative; z-index: 1;
-    }
-    .btn-hero {
-      display: inline-block;
-      border: 1px solid var(--cyan);
-      color: var(--cyan);
-      background: transparent;
       font-family: 'Oswald', sans-serif;
       font-weight: 700;
-      font-size: 13px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      padding: 16px 52px;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: background 0.22s, color 0.22s;
+      font-size: clamp(22px, 3vw, 32px);
+      color: var(--text);
+      position: relative; z-index: 1;
     }
-    .btn-hero:hover { background: var(--cyan); color: #050810; }
-    .hero-cta-sub {
-      margin-top: 12px;
-      font-family: 'Space Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-      color: #4A5A6A;
-    }
-
+    .hero-need span { color: var(--cyan); }
     .hero-logo {
       width: min(180px, 38vw);
       margin-bottom: 16px;
-      position: relative;
-      z-index: 1;
+      position: relative; z-index: 1;
     }
 
     /* ── PHONES ── */
@@ -190,39 +181,7 @@
       display: block;
       border: 1px solid rgba(0,200,232,0.3);
       border-radius: 28px;
-      outline: none;
       box-shadow: 0 0 24px rgba(0,200,232,0.12);
-    }
-
-    /* ── STAT BAR ── */
-    .stat-bar {
-      display: flex;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      background: var(--dark2);
-      margin: 20px 0 0;
-    }
-    .stat-item {
-      flex: 1;
-      padding: 28px 20px;
-      text-align: center;
-      border-right: 1px solid var(--border);
-    }
-    .stat-item:last-child { border-right: none; }
-    .stat-number {
-      display: block;
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: clamp(26px, 3.5vw, 40px);
-      color: var(--cyan);
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-    .stat-label {
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.4;
-      letter-spacing: 0.03em;
     }
 
     /* ── SECTION SHARED ── */
@@ -242,36 +201,30 @@
       line-height: 1.1;
       margin-bottom: 16px;
     }
-    .section-divider {
-      width: 60px; height: 3px;
-      background: var(--cyan);
-      margin: 8px auto;
-    }
 
-    /* ── SCIENCE / HERO FEATURE ── */
-    .science {
-      padding: 28px 20px 36px;
-      background: var(--dark);
+    /* ── WHO IT'S FOR ── */
+    .for-section { padding: 28px 20px 36px; background: var(--dark); }
+    .for-inner { max-width: 960px; margin: 0 auto; }
+    .for-text { margin-bottom: 24px; }
+    .for-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .for-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-top: 2px solid var(--cyan);
+      border-radius: 10px;
+      padding: 28px 24px;
+      box-shadow: 0 0 20px var(--glow), inset 0 1px 0 rgba(0,200,232,0.05);
+      transition: border-color 0.2s, box-shadow 0.2s;
     }
-    .science-inner {
-      max-width: 960px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-    .science-body {
-      font-size: 15px;
-      color: var(--muted);
-      line-height: 1.85;
-      margin-bottom: 16px;
-    }
-    .science-body strong { color: var(--text); font-weight: 600; }
-    .science-badges {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-    }
+    .for-card:hover { border-color: rgba(0,200,232,0.25); box-shadow: 0 0 36px rgba(0,200,232,0.11); }
+    .for-card h4 { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 18px; margin-bottom: 10px; color: var(--text); }
+    .for-card p { font-size: 14px; color: #7A8A9A; line-height: 1.75; }
+
+    /* ── SCIENCE ── */
+    .science { padding: 28px 20px 36px; background: var(--dark); }
+    .science-inner { max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px; }
+    .science-body { font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 16px; }
+    .science-badges { display: flex; gap: 10px; margin-top: 20px; }
     .science-badge {
       display: inline-block;
       border: 1px solid rgba(0,200,232,0.3);
@@ -283,15 +236,7 @@
       padding: 5px 14px;
       border-radius: 20px;
     }
-
-    .pubmed-note {
-      margin-top: 14px;
-      font-size: 12px;
-      color: #4A5A6A;
-      line-height: 1.6;
-      max-width: 380px;
-      font-style: italic;
-    }
+    .pubmed-note { margin-top: 14px; font-size: 12px; color: #4A5A6A; line-height: 1.6; max-width: 380px; font-style: italic; }
     .citation-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .citation-card {
       background: var(--surface);
@@ -302,157 +247,34 @@
       box-shadow: 0 0 18px var(--glow), inset 0 1px 0 rgba(0,200,232,0.06);
       transition: box-shadow 0.25s, border-color 0.25s;
     }
-    .citation-card:hover {
-      box-shadow: 0 0 32px rgba(0,200,232,0.12), inset 0 1px 0 rgba(0,200,232,0.10);
-      border-color: rgba(0,200,232,0.25);
-    }
-    .citation-card p {
-      font-size: 13px;
-      color: #9AAAB8;
-      line-height: 1.75;
-      margin-bottom: 10px;
-    }
-    .cite-ref {
-      font-family: 'Space Mono', monospace;
-      font-size: 10px;
-      color: var(--cyan);
-      opacity: 0.6;
-      letter-spacing: 0.08em;
-    }
+    .citation-card:hover { box-shadow: 0 0 32px rgba(0,200,232,0.12); border-color: rgba(0,200,232,0.25); }
+    .citation-card p { font-size: 13px; color: #9AAAB8; line-height: 1.75; margin-bottom: 10px; }
+    .cite-meaning { font-size: 16px; font-weight: 600; color: var(--text); line-height: 1.6; margin-bottom: 14px; }
+    .citation-card .cite-science { font-size: 12px; color: #5A6A7A; line-height: 1.7; border-top: 1px solid var(--border); padding-top: 10px; margin-top: 10px; }
+    .cite-ref { font-family: 'Space Mono', monospace; font-size: 10px; color: var(--cyan); opacity: 0.6; letter-spacing: 0.08em; }
 
-    /* ── FEATURES ── */
-    .features {
-      padding: 28px 20px 36px;
-      background: var(--dark);
-    }
-    .features-inner { max-width: 960px; margin: 0 auto; }
-    .features-text { text-align: left; margin-bottom: 24px; }
-
-    /* hero feature card */
-    .feature-main {
-      background: var(--surface);
-      border-radius: 12px;
-      padding: 40px 36px;
-      margin-bottom: 16px;
-      border: 1px solid var(--border);
-      box-shadow: 0 0 40px var(--glow), inset 0 1px 0 rgba(0,200,232,0.06);
-      position: relative;
-      overflow: hidden;
-    }
-    .feature-main::before {
-      content: '';
-      position: absolute; top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--cyan), transparent);
-      opacity: 0.4;
-    }
-    .feature-tag {
-      display: inline-block;
-      border: 1px solid rgba(0,200,232,0.3);
-      color: var(--cyan);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-bottom: 16px;
-    }
-    .feature-main h3 {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 26px;
-      margin-bottom: 12px;
-    }
-    .feature-main p {
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.8;
-      max-width: 660px;
-    }
-
-    /* feature grid */
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-    .feat-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 26px 22px;
-      box-shadow: 0 0 16px var(--glow);
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .feat-card:hover {
-      border-color: rgba(0,200,232,0.22);
-      box-shadow: 0 0 28px rgba(0,200,232,0.10);
-    }
-    .feat-index {
-      font-family: 'Space Mono', monospace;
-      font-size: 10px;
-      color: var(--cyan);
-      opacity: 0.5;
-      letter-spacing: 0.1em;
-      margin-bottom: 10px;
-      display: block;
-    }
-    .feat-card h4 {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-    .feat-card p { color: #7A8A9A; font-size: 14px; line-height: 1.7; }
-
-    /* ── WHO IT'S FOR ── */
-    .for-section {
-      padding: 28px 20px 36px;
-      background: var(--dark);
-    }
-    .for-inner { max-width: 960px; margin: 0 auto; }
-    .for-text { margin-bottom: 24px; }
-    .for-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
-    }
-    .for-card {
+    /* ── OUTCOMES ── */
+    .outcomes-section { padding: 48px 20px; background: var(--dark); text-align: center; }
+    .outcomes-inner { max-width: 960px; margin: 0 auto; }
+    .outcomes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
+    .outcome-item {
       background: var(--surface);
       border: 1px solid var(--border);
       border-top: 2px solid var(--cyan);
       border-radius: 10px;
-      padding: 28px 24px;
-      box-shadow: 0 0 20px var(--glow), inset 0 1px 0 rgba(0,200,232,0.05);
-      transition: border-color 0.2s, box-shadow 0.2s;
+      padding: 32px 20px;
+      box-shadow: 0 0 20px var(--glow);
     }
-    .for-card:hover {
-      border-color: rgba(0,200,232,0.25);
-      box-shadow: 0 0 36px rgba(0,200,232,0.11);
-    }
-    .for-card h4 {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-    .for-card p { font-size: 14px; color: #7A8A9A; line-height: 1.75; }
+    .outcome-item p { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 18px; color: var(--text); line-height: 1.3; }
 
     /* ── PRICING ── */
-    .pricing {
-      padding: 20px 20px 36px;
-      background: var(--dark);
-      text-align: center;
-    }
+    .pricing { padding: 20px 20px 36px; background: var(--dark); text-align: center; }
     .pricing-inner { max-width: 552px; margin: 0 auto; }
     .pricing-card {
       background: var(--surface);
       border: 1px solid var(--cyan);
       border-radius: 14px;
       padding: 56px 60px;
-      margin-top: 0;
       position: relative;
       overflow: hidden;
     }
@@ -462,23 +284,42 @@
       background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,200,232,0.08) 0%, transparent 70%);
       pointer-events: none;
     }
-    .pricing-price {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 76px;
-      line-height: 1;
-      color: var(--cyan);
-      margin-bottom: 8px;
-    }
+    .pricing-price { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 76px; line-height: 1; color: var(--cyan); margin-bottom: 8px; }
     .pricing-label { color: var(--muted); font-size: 15px; margin-bottom: 14px; }
-    .pricing-tag {
+    .pricing-tag { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--cyan); }
+    .email-capture { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; align-items: center; position: relative; z-index: 1; }
+    .email-capture input[type="email"] {
+      width: 100%;
+      max-width: 360px;
+      padding: 14px 20px;
+      background: var(--dark);
+      border: 1px solid rgba(0,200,232,0.3);
+      border-radius: 50px;
+      color: var(--text);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .email-capture input[type="email"]::placeholder { color: #4A5A6A; }
+    .email-capture input[type="email"]:focus { border-color: var(--cyan); }
+    .btn-notify {
+      display: inline-block;
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      background: transparent;
       font-family: 'Oswald', sans-serif;
       font-weight: 700;
-      font-size: 11px;
-      letter-spacing: 0.22em;
+      font-size: 13px;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--cyan);
+      padding: 14px 40px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.22s, color 0.22s;
     }
+    .btn-notify:hover { background: var(--cyan); color: #050810; }
+    .email-confirm { display: none; font-family: 'Space Mono', monospace; font-size: 11px; color: var(--cyan); letter-spacing: 0.1em; margin-top: 8px; }
 
     /* ── FOOTER ── */
     footer {
@@ -491,124 +332,28 @@
       flex-wrap: wrap;
       gap: 16px;
     }
-    .footer-brand {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      color: var(--cyan);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
+    .footer-brand { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 16px; color: var(--cyan); letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; }
     .footer-brand sup { font-size: 10px; vertical-align: super; }
     .footer-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
-    .footer-links a {
-      color: #4A5A6A;
-      text-decoration: none;
-      font-size: 13px;
-      transition: color 0.2s;
-    }
+    .footer-links a { color: #4A5A6A; text-decoration: none; font-size: 13px; transition: color 0.2s; }
     .footer-links a:hover { color: var(--cyan); }
-    .footer-copy { color: #3A4A5A; font-size: 13px; }
-
-    /* ── MID CTA ── */
-    .mid-cta {
-      text-align: center;
-      padding: 48px 20px;
-      background: var(--dark);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-    .mid-cta-inner { max-width: 960px; margin: 0 auto; }
-    .mid-cta .hero-cta-sub { margin-top: 12px; }
-
-    /* ── OUTCOMES ── */
-    .outcomes-section {
-      padding: 48px 20px;
-      background: var(--dark);
-      text-align: center;
-    }
-    .outcomes-inner { max-width: 960px; margin: 0 auto; }
-    .outcomes-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 32px;
-    }
-    .outcome-item {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-top: 2px solid var(--cyan);
-      border-radius: 10px;
-      padding: 32px 20px;
-      box-shadow: 0 0 20px var(--glow);
-    }
-    .outcome-icon {
-      display: block;
-      font-size: 22px;
-      color: var(--cyan);
-      margin-bottom: 12px;
-    }
-    .outcome-item p {
-      font-family: 'Oswald', sans-serif;
-      font-weight: 600;
-      font-size: 18px;
-      color: var(--text);
-      line-height: 1.3;
-    }
-
-    /* ── CITE MEANING ── */
-    .cite-meaning {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--text);
-      line-height: 1.6;
-      margin-bottom: 14px;
-    }
-    .citation-card .cite-science {
-      font-size: 12px;
-      color: #5A6A7A;
-      line-height: 1.7;
-      border-top: 1px solid var(--border);
-      padding-top: 10px;
-      margin-top: 10px;
-    }
+    .footer-copy { color: #3A4A5A; font-size: 12px; max-width: 560px; line-height: 1.6; }
 
     /* ── SCROLL REVEAL ── */
-    .reveal {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.65s ease, transform 0.65s ease;
-    }
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* ── MOBILE ── */
     @media (max-width: 680px) {
       nav { padding: 0 18px; position: relative; }
       .nav-toggle { display: flex; }
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 56px; left: 0; right: 0;
-        background: rgba(8,12,18,0.98);
-        padding: 20px 24px;
-        gap: 18px;
-        border-bottom: 1px solid var(--border);
-        z-index: 200;
-      }
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 56px; left: 0; right: 0; background: rgba(8,12,18,0.98); padding: 20px 24px; gap: 18px; border-bottom: 1px solid var(--border); z-index: 200; }
       .nav-links.open { display: flex; }
       .nav-links li { list-style: none; }
-      .stat-bar { flex-wrap: wrap; }
-      .stat-item { min-width: 50%; border-bottom: 1px solid var(--border); }
-      .stat-item:nth-child(2n) { border-right: none; }
       .phones { grid-template-columns: 1fr; max-width: 220px; margin: 0 auto; }
-      .science-inner { grid-template-columns: 1fr; gap: 32px; }
       .citation-cards { grid-template-columns: 1fr; }
-      .features-grid { grid-template-columns: 1fr; }
       .for-grid { grid-template-columns: 1fr; }
       .outcomes-grid { grid-template-columns: 1fr; }
-      .feature-main { padding: 28px 20px; }
       .pricing-card { padding: 40px 28px; }
       .pricing-price { font-size: 60px; }
       footer { flex-direction: column; align-items: center; text-align: center; padding: 28px 20px; }
@@ -641,25 +386,16 @@
       <span class="line1">The scale is going down.</span>
       <span class="line2">That feels amazing.</span>
     </h1>
-    <p class="hero-sub">What nobody tells you is that some of what you're losing is muscle — and that's the part that keeps you toned, keeps you strong, and keeps the weight off when you stop the drug. Signal+ was created by a GLP-1 user to help keep their muscle when their appetite was shut down.</p>
-    <div class="hero-cta">
-      <span class="btn-hero" style="cursor:default; opacity:0.7;">COMING SOON</span>
-      
-    </div>
+    <p class="hero-sub">The scale is going down and that's great. But you're frustrated because that belly fat isn't going away. You don't look like you thought you would. And not only that — you're more tired now than you've ever been.</p>
+    <p class="hero-need">You need <span>Signal+</span></p>
   </section>
 
   <!-- PHONES -->
   <section class="phones-section">
     <div class="phones">
-      <div class="phone-wrap">
-        <img src="Images/homeview.jpg" alt="Signal+ Home Screen" />
-      </div>
-      <div class="phone-wrap">
-        <img src="Images/proteinprompt.jpg" alt="Signal+ Protein Prompt" />
-      </div>
-      <div class="phone-wrap">
-        <img src="Images/mtorjournal.jpg" alt="Signal+ mTOR Journal" />
-      </div>
+      <div class="phone-wrap"><img src="Images/homeview.jpg" alt="Signal+ Home Screen" /></div>
+      <div class="phone-wrap"><img src="Images/proteinprompt.jpg" alt="Signal+ Protein Prompt" /></div>
+      <div class="phone-wrap"><img src="Images/mtorjournal.jpg" alt="Signal+ mTOR Journal" /></div>
     </div>
   </section>
 
@@ -668,39 +404,27 @@
     <div class="for-inner">
       <div class="for-text">
         <p class="section-eyebrow">Who It's For</p>
-        <h2 class="section-title">You're not eating enough.<br>Your body is paying for it.</h2>
+        <h2 class="section-title">You're not imagining it.</h2>
       </div>
       <div class="for-grid">
         <div class="for-card reveal">
           <h4>GLP-1 Users</h4>
-          <p>The drug is working — your hunger is gone. But when you stop feeling hungry, your body starts losing muscle alongside the fat. Most people on GLP-1s don't know this is happening until it shows up in how they feel. Signal+ was built for this problem.</p>
+          <p>The scale is going down. You feel in control for the first time. But something isn't right. You're tired. That belly isn't budging. And you don't look the way you thought you would. You're not imagining it — and it's not the drug failing you.</p>
         </div>
         <div class="for-card reveal">
           <h4>Older Adults</h4>
-          <p>Appetite naturally decreases as you age. The less you eat, the more muscle your body breaks down — and lost muscle means less strength, less energy, and less independence. It happens gradually, quietly, and most people don't connect the dots until it's too late. Signal+ can help.</p>
-        </div>
-        <div class="for-card reveal">
-          <h4>Fitness Beginners</h4>
-          <p>You're showing up. You're doing the work. But effort alone doesn't build the body you're after — your body needs the right conditions to turn that work into results. Most beginners never get there because no one told them what those conditions are. Signal+ does.</p>
+          <p>You're drinking your shake every day. You're doing what you were told. But you're still getting weaker. Still less energy. And somewhere in the back of your mind is a fear you don't talk about — losing your independence. Signal+ was built for that fear.</p>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- MID CTA 1 -->
-  <div class="mid-cta">
-    <div class="mid-cta-inner">
-      <span class="btn-hero" style="cursor:default; opacity:0.7;">COMING SOON</span>
-      
-    </div>
-  </div>
 
   <!-- SCIENCE -->
   <section class="science" id="science">
     <div class="science-inner">
       <div>
         <p class="section-eyebrow">The Science</p>
-        <h2 class="section-title reveal">Why Protein Timing<br>Actually Matters.</h2>
+        <h2 class="section-title reveal">This is why.</h2>
         <p class="science-body reveal">Signal+ isn't based on habit tracking or gut feeling. It's built on peer-reviewed research into how muscle is actually made and lost. Here's what that research says.</p>
         <div class="science-badges reveal">
           <span class="science-badge">Peer Reviewed</span>
@@ -733,42 +457,35 @@
     </div>
   </section>
 
-  <!-- MID CTA 2 -->
-  <div class="mid-cta">
-    <div class="mid-cta-inner">
-      <span class="btn-hero" style="cursor:default; opacity:0.7;">COMING SOON</span>
-      
-    </div>
-  </div>
-
-  <!-- WHAT YOU GET -->
+  <!-- THIRTY DAYS -->
   <section class="outcomes-section">
     <div class="outcomes-inner">
       <p class="section-eyebrow">Thirty Days From Now</p>
       <h2 class="section-title">Here is what changes.</h2>
       <div class="outcomes-grid">
-        <div class="outcome-item reveal">
-          <p>💪 You feel stronger.</p>
-        </div>
-        <div class="outcome-item reveal">
-          <p>⚡ You have more energy.</p>
-        </div>
-        <div class="outcome-item reveal">
-          <p>🔥 Your body will feel more firm and toned.</p>
-        </div>
+        <div class="outcome-item reveal"><p>The belly fat starts to disappear.</p></div>
+        <div class="outcome-item reveal"><p>Your energy comes back better than ever.</p></div>
+        <div class="outcome-item reveal"><p>From soft and tired to toned and energetic.</p></div>
       </div>
     </div>
   </section>
 
-
-
-  <!-- FINAL CTA -->
-  <div class="mid-cta" id="download">
-    <div class="mid-cta-inner">
-      <span class="btn-hero" style="cursor:default; opacity:0.7;">COMING SOON</span>
-      
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="pricing-inner">
+      <p class="section-eyebrow">Try It Free</p>
+      <div class="pricing-card">
+        <div class="pricing-price">$19.99</div>
+        <p class="pricing-label">per quarter — after your free trial</p>
+        <p class="pricing-tag">30 Days Free &nbsp;·&nbsp; No Credit Card &nbsp;·&nbsp; Cancel Anytime</p>
+        <div class="email-capture">
+          <input type="email" id="notifyEmail" placeholder="Your email address" />
+          <button class="btn-notify" onclick="handleNotify()">NOTIFY ME WHEN IT LAUNCHES</button>
+          <p class="email-confirm" id="emailConfirm">You're on the list. We'll be in touch.</p>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -776,23 +493,22 @@
     <ul class="footer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="signal-privacy.html">Privacy Policy</a></li>
-      <li><a href="signal-support.html">Contact & Support</a></li>
+      <li><a href="signal-support.html">Contact &amp; Support</a></li>
       <li><a href="affiliates.html">Affiliates</a></li>
     </ul>
-    <p class="footer-copy">© 2026 Signal+. No medical claims. iPhone + Apple Watch.</p>
+    <p class="footer-copy">© 2026 Signal+. Signal+ is not a medical device and does not provide medical advice. Always consult your physician before making changes to your diet or health routine.</p>
   </footer>
 
   <script>
-    // Close mobile nav when any link is clicked
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelector('.nav-links').classList.remove('open');
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('open');
+      });
     });
-  });
 
-  const reveals = document.querySelectorAll('.reveal');
+    const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setTimeout(() => entry.target.classList.add('visible'), 60);
           observer.unobserve(entry.target);
@@ -800,6 +516,16 @@
       });
     }, { threshold: 0.08 });
     reveals.forEach(el => observer.observe(el));
+
+    function handleNotify() {
+      const email = document.getElementById('notifyEmail').value;
+      if (email && email.includes('@')) {
+        window.location.href = 'mailto:info@signalplushealth.com?subject=Notify Me When Signal+ Launches&body=Please notify me when Signal+ launches. My email is: ' + encodeURIComponent(email);
+        document.getElementById('emailConfirm').style.display = 'block';
+        document.getElementById('notifyEmail').style.display = 'none';
+        document.querySelector('.btn-notify').style.display = 'none';
+      }
+    }
   </script>
 
 </body>
